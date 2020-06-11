@@ -5,14 +5,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @auther zzyy
- * @create 2020-02-17 21:13
+ * @create 2020-02-18 17:20
  */
 @SpringBootApplication
 //@EnableEurekaClient
-//@EnableDiscoveryClient
-public class PaymentMain8001
+//@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration=MySelfRule.class)
+public class OrderMain80
 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class, args);
+            SpringApplication.run(OrderMain80.class, args);
     }
 }
